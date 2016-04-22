@@ -1276,6 +1276,7 @@ struct _GC_arrays {
 };
 
 GC_API_PRIV GC_FAR struct _GC_arrays GC_arrays;
+GC_API_PRIV GC_FAR bottom_index * my_top_index[TOP_SZ];
 
 #define GC_all_nils GC_arrays._all_nils
 #define GC_atomic_in_use GC_arrays._atomic_in_use
@@ -1302,7 +1303,7 @@ GC_API_PRIV GC_FAR struct _GC_arrays GC_arrays;
 #define GC_scratch_last_end_ptr GC_arrays._scratch_last_end_ptr
 #define GC_size_map GC_arrays._size_map
 #define GC_static_roots GC_arrays._static_roots
-#define GC_top_index GC_arrays._top_index
+#define GC_top_index my_top_index /* GC_arrays._top_index */
 #define GC_uobjfreelist GC_arrays._uobjfreelist
 #define GC_valid_offsets GC_arrays._valid_offsets
 

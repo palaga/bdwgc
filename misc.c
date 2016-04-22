@@ -75,6 +75,7 @@
 #endif
 
 GC_FAR struct _GC_arrays GC_arrays /* = { 0 } */;
+GC_FAR bottom_index * my_top_index[TOP_SZ];
 
 GC_INNER GC_bool GC_debugging_started = FALSE;
         /* defined here so we don't have to load debug_malloc.o */

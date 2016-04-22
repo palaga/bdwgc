@@ -149,7 +149,6 @@ typedef struct bi {
                                 /* The last entry in each chain is      */
                                 /* GC_all_nils.                         */
 
-
 #define MAX_JUMP (HBLKSIZE - 1)
 
 #define HDR_FROM_BI(bi, p) \
